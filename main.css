@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #212121;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar{
+    width: 18%;
+    position: absolute;
+    top: 8%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: lighter;
+    
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: rgb(60, 57, 57);; 
+    border-radius: 10px;
+  }
+  
+  
+.sidebar h3{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+.sidebar h3:first-child{
+    margin-top: 10%;
+}
+.sidebar h3:hover{
+    background-color: #5f5e5e;
+    cursor: pointer;
+}
+.sidebar hr{
+    margin: 20px 0 10px 0;
+    border: 0.5px solid white;
+    border-top: 0;
+}
+.spacer{
+    height: 200px;
+    border: 0 none none;
+    padding: 10px 10px 10px 30px;
+}
+.spacer button{
+    color: #1F85DE;
+    background-color: #383838;
+    border: 2px solid #1F85DE;
+    width: 10vw;
+    margin-right: 10px;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    padding: 8px ;
+    font-size: 15px;
+}
+.spacer button img{
+    width: 20px;
+    margin: 0 10px;
+}
+.sidebar h4{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+.sidebar h4:hover{
+    background-color: #5f5e5e;
+    cursor: pointer;
+}
+
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.lastOne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.lastOne button{
+    color: #1F85DE;
+    background-color: #383838;
+    border: 2px solid #1F85DE;
+    height: 70%;
+    width: 90%;
+    margin-right: 10px;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+
+}
+.lastOne button img{
+    width: 20px;
+    margin: 0 8px;
+}
+
+.lastOne button:hover{
+    cursor: pointer;
+}
+.lastOne div{
+    width: 2vw;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 8px;
+}
+.lastOne div:active{
+    background-color: rgb(28, 27, 27);
+}
+.lastOne div img{
+    width: 20px;
+    
+}
+
+
+/*Icon Section*/
+.icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+.icon img{
+    height: 40px;
+}
+/*Buscador*/
+.buscador{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.buscador input{
+    background-color: #000;
+    height: 75%;
+    width: 30vw;
+    border: 1px solid #383838;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #fff;
+}
+.buscador input:focus{
+    border: 1px solid rgb(17, 17, 182);
+}
+.buscador button{
+    height: 75%;
+    border: 1px solid #383838;
+    width: 60px;
+    background-color: #383838;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.tag{
+    position: absolute;
+    top: 10%;
+    padding: 15px;
+    border: 1px solid rgb(138, 138, 138);
+    border-left: 0;
+    border-right: 0;
+    right: 0;
+    left: 18%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.tag button{
+    color: white;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background-color: #383838;
+    margin: 0 5px 0 5px;
+}
+.tag button:hover{
+    background-color: #5f5e5e;
+    cursor: pointer;
+}
+.tag button:active{
+    background-color: #fff;
+    color: #212121;
+}
+
+main{
+    background-color: rgb(28, 27, 27);
+    position: fixed;
+    left: 20%;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.miniatura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    padding: 10px;
+    
+}
+.miniatura:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.miniatura img{
+    width: 100%;
+}
+.miniatura a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+a span{
+    color: #5f5e5e;
+    font-size: 15px;
+}
+/*
+https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+*/
